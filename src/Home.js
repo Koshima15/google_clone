@@ -3,6 +3,7 @@ import './Home.css'
 import { Link } from 'react-router-dom'
 import AppsIcon from '@material-ui/icons/Apps';
 import { Avatar } from '@material-ui/core';
+import Search from './Search.js'
 export default function Home() {
     return (
         <div className="home">
@@ -25,7 +26,7 @@ export default function Home() {
                     alt="google logo"
                     />
                     <div className='home__inputContainer'>
-                        {/* {search} */}
+                        <Search hideButtons/>
                     </div>
             </div>
         </div>
