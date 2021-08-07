@@ -1,20 +1,20 @@
-export const initialState={
-    term:null,
+export const initialState = {
+    term: null,
 };
-export const actionTypes={
-    SET_SEARCH_TERM:"SET_SEARCH_TERM"
+export const actionTypes = {
+    SET_SEARCH_TERM: "SET_SEARCH_TERM"
 }
-const reducer =(state,action)=>{
-    console.log(actoion);
+const reducer = (state, action) => {
+    console.log(action);
 
-    switch (action.type){
+    switch (action.type) {
         case actionTypes.SET_SEARCH_TERM:
-            return{
+            return {
                 ...state,
-                term:action.term,
+                term: action.term,
             };
-        default :
-        return state;
+        default:
+            return state;
     }
 }
 
